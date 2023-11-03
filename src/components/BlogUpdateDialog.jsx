@@ -7,7 +7,7 @@ import {
   DialogFooter,
   Typography,
 } from "@material-tailwind/react";
-import ReactQuill from "react-quill";
+// import ReactQuill from "react-quill";
 import { QuillScript } from "@/utility/QuillScript";
 import {
   read_single_blog__Request__API,
@@ -114,14 +114,14 @@ export function BlogUpdateDialog({ id }) {
               defaultValue={blog?.imgCDN}
               ref={(input) => (imgCDNRef = input)}
             />
-            <ReactQuill
-              className=" block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner min-h-[200px] h-[300px] pb-[50px] overflow-y-auto"
-              theme="snow"
-              value={editorData}
-              onChange={setEditorData}
-              modules={QuillScript.modules}
-              formats={QuillScript.formats}
-            />
+            {/*<ReactQuill*/}
+            {/*  className=" block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner min-h-[200px] h-[300px] pb-[50px] overflow-y-auto"*/}
+            {/*  theme="snow"*/}
+            {/*  value={editorData}*/}
+            {/*  onChange={setEditorData}*/}
+            {/*  modules={QuillScript.modules}*/}
+            {/*  formats={QuillScript.formats}*/}
+            {/*/>*/}
           </div>
         </DialogBody>
         <DialogFooter className="space-x-2">

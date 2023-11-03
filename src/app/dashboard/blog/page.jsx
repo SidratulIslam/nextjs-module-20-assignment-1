@@ -9,7 +9,7 @@ import { SuccessToast } from "@/utility/FormHelper";
 import { useEffect, useRef, useState } from "react";
 import { Toaster } from "react-hot-toast";
 
-import ReactQuill from "react-quill";
+// import ReactQuill from "react-quill";
 import { QuillScript } from "@/utility/QuillScript";
 import { DeleteAlertBlogPost } from "@/utility/DeleteAlert";
 import { BlogUpdateDialog } from "@/components/BlogUpdateDialog";
@@ -115,14 +115,14 @@ export default function Page() {
                     >
                       Blog Description
                     </label>
-                    <ReactQuill
-                      className=" block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner min-h-[250px] h-full pb-[50px]"
-                      theme="snow"
-                      value={editorData}
-                      onChange={setEditorData}
-                      modules={QuillScript.modules}
-                      formats={QuillScript.formats}
-                    />
+                    {/*<ReactQuill*/}
+                    {/*  className=" block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner min-h-[250px] h-full pb-[50px]"*/}
+                    {/*  theme="snow"*/}
+                    {/*  value={editorData}*/}
+                    {/*  onChange={setEditorData}*/}
+                    {/*  modules={QuillScript.modules}*/}
+                    {/*  formats={QuillScript.formats}*/}
+                    {/*/>*/}
                   </div>
                 </div>
                 <button
